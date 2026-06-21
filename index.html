@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="description"
+        content="Chandru Venkatasamy – Data Analyst & Machine Learning Enthusiast. Transforming data into actionable insights." />
+    <meta name="keywords"
+        content="Chandru Venkatasamy, Data Analyst, Python, SQL, Power BI, Machine Learning, Portfolio" />
+    <meta property="og:title" content="Chandru Venkatasamy – Data Analyst Portfolio" />
+    <meta property="og:description" content="Transforming data into actionable insights" />
+    <meta property="og:image" content="image_16c362.png" />
+    <title>Chandru Venkatasamy — Data Analyst Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Outfit:wght@300;400;500;600&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- LOADER -->
+    <div id="loader">
+        <div class="ld-name">C</div>
+        <div class="ld-bar">
+            <div class="ld-fill"></div>
+        </div>
+        <div class="ld-sub">Loading Portfolio</div>
+    </div>
+
+    <!-- CURSOR -->
+    <div id="cur-dot"></div>
+    <div id="cur-ring"></div>
+
+    <!-- CANVAS BG -->
+    <canvas id="bg"></canvas>
+
+    <!-- ======= NAV ======= -->
+    <nav id="nav">
+        <div class="nav-logo">Chandru</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="act">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <a href="./files/Chandru-resume.pdf" download class="nav-cta">Download CV</a>
+            <button class="ham" id="ham" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ======= HERO ======= -->
+    <section id="home">
+        <div class="hero-wrap">
+            <div class="hero-left">
+                <div class="hero-eyebrow">Available for Opportunities</div>
+                <h1 class="hero-h1">
+                    HELLO, I'M<br />
+                    <span class="gold">CHANDRU</span>
+                </h1>
+                <div class="hero-role">
+                    <span class="prefix">→</span>
+                    <span id="typed"></span><span class="cursor">|</span>
+                </div>
+                <p class="hero-bio">B.E. Computer Science and Engineering student with hands-on experience in
+                    Python, SQL, Power BI, and Machine Learning. Currently a Data Science Intern at Q Spiders, skilled
+                    in data visualization, predictive modeling, and business intelligence.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn-gold">View My Work <svg width="14" height="14" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg></a>
+                    <a href="#contact" class="btn-ghost">Hire Me</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/Chandruvenkat-01" target="_blank" class="soc" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/Chandruvenkatasamy" target="_blank" class="soc"
+                        aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7H10v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="photo-frame">
+                    <div class="photo-bg"></div>
+                    <img src="./files/hero-sec-img.png" alt="Chandru" class="photo-img" />
+                    <div class="photo-badge">
+                        <span class="pb-val">Power BI</span>
+                        <span class="pb-lbl">Sales Dashboard</span>
+                    </div>
+                    <div class="photo-badge2">
+                        <span class="pb-val">Data Science</span>
+                        <span class="pb-lbl">Intern @ Q Spiders</span>
+                    </div>
+                    <div class="corner-deco tl"></div>
+                    <div class="corner-deco br"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ======= ABOUT ======= -->
+    <section id="about">
+        <div class="wrap">
+            <div class="about-grid">
+                <div class="about-img-col rev left">
+                    <div class="about-img-wrap">
+                        <img src="./files/about-sec-img.png" alt="Chandru" />
+                        <div class="about-img-overlay"></div>
+                        <div class="about-img-caption">
+                            <h4>Chandru Venkatasamy</h4>
+                            <p>B.E – Computer Science & Engineering</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content rev right">
+                    <span class="sec-tag">01 / About Me</span>
+                    <h2 class="sec-h2">Turning Data Into<br />Actionable Insights</h2>
+                    <div class="sec-line"></div>
+                    <br />
+                    <p class="about-p"><strong>B.E. Computer Science and Engineering</strong> student at Sri
+                        Ramakrishna College of Engineering with a CGPA of 8.3. Passionate about <strong>Data
+                            Analysis</strong> and <strong>Machine Learning</strong>, with hands-on skills in Python,
+                        SQL, and Power BI.</p>
+                    <p class="about-p">Currently working as a <strong>Data Science Intern at Q Spiders</strong>,
+                        building interactive Power BI dashboards and optimizing SQL queries. I enjoy transforming raw
+                        data into clear, actionable business intelligence through visualization and predictive modeling.
+                    </p>
+                    <div class="kpis">
+                        <div class="kpi"><span class="kpi-n" data-t="4">0</span>
+                            <div class="kpi-l">Projects</div>
+                        </div>
+                        <div class="kpi"><span class="kpi-n" data-t="2">0</span>
+                            <div class="kpi-l">Certifications</div>
+                        </div>
+                        <div class="kpi"><span class="kpi-n" data-t="15">0</span>
+                            <div class="kpi-l">Skills</div>
+                        </div>
+                    </div>
+                    <div class="chips">
+                        <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">Power BI</span>
+                        <span class="chip">Machine Learning</span><span class="chip">Pandas</span><span
+                            class="chip">Scikit-learn</span>
+                        <span class="chip">EDA</span><span class="chip">PySpark</span><span class="chip">Data
+                            Visualization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= SKILLS ======= -->
+    <section id="skills">
+        <div class="wrap">
+            <span class="sec-tag rev">02 / Technical Skills</span>
+            <h2 class="sec-h2 rev">Core Strengths</h2>
+            <div class="sec-line rev"></div>
+            <br /><br />
+            <div class="skills-layout rev">
+                <div class="skills-sidebar">
+                    <p style="font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:20px">A curated skill set
+                        built through academic training, internship work, and personal projects.</p>
+                    <div class="sk-tabs">
+                        <button class="sk-tab active" data-panel="prog"><span
+                                class="tab-icon">⌨</span>Programming</button>
+                        <button class="sk-tab" data-panel="web"><span class="tab-icon">🤖</span>Machine
+                            Learning</button>
+                        <button class="sk-tab" data-panel="db"><span class="tab-icon">🗄</span>Big Data</button>
+                        <button class="sk-tab" data-panel="tools"><span class="tab-icon">🛠</span>Tools &
+                            Visualization</button>
+                    </div>
+                </div>
+                <div class="sk-panels">
+                    <div class="sk-panel active" id="p-prog">
+                        <div class="skill-rows">
+                            <div class="skill-row">
+                                <div class="skill-row-top"><span class="skill-row-name">Python</span><span
+                                        class="skill-row-pct">85%</span></div>
+                                <div class="bar-bg">
+                                    <div class="bar-fg" data-w="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-row">
+                                <div class="skill-row-top"><span class="skill-row-name">SQL (Oracle SQL)</span><span
+                                        class="skill-row-pct">80%</span></div>
+                                <div class="bar-bg">
+                                    <div class="bar-fg" data-w="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-row">
+                                <div class="skill-row-top"><span class="skill-row-name">Pandas / NumPy</span><span
+                                        class="skill-row-pct">85%</span></div>
+                                <div class="bar-bg">
+                                    <div class="bar-fg" data-w="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sk-panel" id="p-web">
+                        <div class="skill-rows">
+                            <div class="skill-row">
+                                <div class="skill-row-top"><span class="skill-row-name">Scikit-learn</span><span
+                                        class="skill-row-pct">80%</span></div>
+                                <div class="bar-bg">
+                                    <div class="bar-fg" data-w="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-row">
+                                <div class="skill-row-top"><span class="skill-row-name">XGBoost / Random
+                                        Forest</span><span class="skill-row-pct">75%</span></div>
+                                <div class="bar-bg">
+                                    <div class="bar-fg" data-w="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-row">
+                                <div class="skill-row-top"><span class="skill-row-name">Regression /
+                                        Classification</span><span class="skill-row-pct">80%</span></div>
+                                <div class="bar-bg">
+                                    <div class="bar-fg" data-w="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sk-panel" id="p-db">
+                        <div class="skill-rows">
+                            <div class="skill-row">
+                                <div class="skill-row-top"><span class="skill-row-name">HDFS / Hadoop</span><span
+                                        class="skill-row-pct">70%</span></div>
+                                <div class="bar-bg">
+                                    <div class="bar-fg" data-w="70"></div>
+                                </div>
+                            </div>
+                            <div class="skill-row">
+                                <div class="skill-row-top"><span class="skill-row-name">PySpark</span><span
+                                        class="skill-row-pct">70%</span></div>
+                                <div class="bar-bg">
+                                    <div class="bar-fg" data-w="70"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sk-panel" id="p-tools">
+                        <div class="tag-cloud">
+                            <span class="sk-tag">Power BI</span><span class="sk-tag">Excel</span>
+                            <span class="sk-tag">Matplotlib</span><span class="sk-tag">Seaborn</span>
+                            <span class="sk-tag">Git & GitHub</span><span class="sk-tag">Jupyter Notebook</span><span
+                                class="sk-tag">VS Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= PROJECTS ======= -->
+    <section id="projects">
+        <div class="wrap">
+            <div class="proj-header">
+                <div>
+                    <span class="sec-tag rev">03 / Projects & Ventures</span>
+                    <h2 class="sec-h2 rev">What I've Built</h2>
+                    <div class="sec-line rev"></div>
+                </div>
+            </div>
+            <div class="proj-grid">
+
+                <!-- Super Store Sales Dashboard -->
+                <div class="proj-card featured rev">
+                    <span class="feat-badge">★ Main Project</span>
+                    <div class="feat-left">
+                        <div class="proj-num">01 / 04</div>
+                        <span class="proj-icon">📊</span>
+                        <h3 class="proj-title">Super Store Sales Dashboard</h3>
+                        <p class="proj-desc">Designed and developed an end-to-end Sales Analytics Dashboard using Power
+                            BI, DAX, and Power Query, analyzing sales, profit, customer, product, and city-level
+                            performance with forecasting and KPI tracking.</p>
+                        <div class="proj-feats">
+                            <span>✓ Interactive Dashboards & KPI Tracking</span>
+                            <span>✓ Forecasting & Filtering</span>
+                            <span>✓ Business Intelligence Reporting</span>
+                        </div>
+                        <div class="proj-stack">
+                            <span class="p-badge">Power BI</span><span class="p-badge">DAX</span>
+                            <span class="p-badge">Power Query</span>
+                        </div>
+                    </div>
+                    <div class="feat-right">
+                        <div class="feat-stats">
+                            <div class="feat-stat-item">
+                                <div class="fsi-lbl">Period</div>
+                                <div class="fsi-val">April 2026</div>
+                            </div>
+                            <div class="feat-stat-item">
+                                <div class="fsi-lbl">Domain</div>
+                                <div class="fsi-val">Business Intelligence</div>
+                            </div>
+                            <div class="feat-stat-item">
+                                <div class="fsi-lbl">Role</div>
+                                <div class="fsi-val">Data Analyst</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Medical Disease Diagnosis -->
+                <div class="proj-card rev" style="--d:.1s">
+                    <div class="proj-num">02 / 04</div>
+                    <span class="proj-icon">🩺</span>
+                    <h3 class="proj-title">Medical Disease Diagnosis</h3>
+                    <p class="proj-desc">Developed a CNN-based disease diagnosis system analyzing medical images for
+                        automated detection of abnormalities like tumors and fractures, with encryption-based patient
+                        data protection and an appointment management system.</p>
+                    <div class="proj-feats">
+                        <span>✓ CNN Image Classification</span>
+                        <span>✓ Encrypted Patient Data (ECC)</span>
+                    </div>
+                    <div class="proj-stack">
+                        <span class="p-badge">Python</span><span class="p-badge">CNN</span><span
+                            class="p-badge">ECC</span>
+                    </div>
+                </div>
+
+                <!-- Citizen Health Analysis -->
+                <div class="proj-card rev" style="--d:.2s">
+                    <div class="proj-num">03 / 04</div>
+                    <span class="proj-icon">🏥</span>
+                    <h3 class="proj-title">Citizen Health Analysis</h3>
+                    <p class="proj-desc">Cleaned and analyzed 5,000+ citizen health records using Python and EDA
+                        techniques to identify key risk factors associated with diabetes, visualizing findings with
+                        Matplotlib and Seaborn.</p>
+                    <div class="proj-feats">
+                        <span>✓ Exploratory Data Analysis</span>
+                        <span>✓ Risk Factor Identification</span>
+                    </div>
+                    <div class="proj-stack">
+                        <span class="p-badge">Python</span><span class="p-badge">Pandas</span><span
+                            class="p-badge">Seaborn</span>
+                    </div>
+                </div>
+
+                <!-- Churn Model Prediction -->
+                <div class="proj-card rev" style="--d:.3s">
+                    <div class="proj-num">04 / 04</div>
+                    <span class="proj-icon">📉</span>
+                    <h3 class="proj-title">Churn Model Prediction</h3>
+                    <p class="proj-desc">Developed a Customer Churn Prediction model using Logistic Regression, Decision
+                        Tree, KNN, and XGBoost, with feature engineering, encoding, scaling, and class imbalance
+                        handling via SMOTE.</p>
+                    <div class="proj-feats">
+                        <span>✓ Automated ML Pipelines</span>
+                        <span>✓ SMOTE & Under-Sampling</span>
+                    </div>
+                    <div class="proj-stack">
+                        <span class="p-badge">XGBoost</span><span class="p-badge">Scikit-learn</span><span
+                            class="p-badge">SMOTE</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= EXPERIENCE ======= -->
+    <section id="experience">
+        <div class="wrap">
+            <span class="sec-tag rev">04 / Experience & Education</span>
+            <h2 class="sec-h2 rev">My Journey</h2>
+            <div class="sec-line rev"></div>
+            <div class="exp-layout">
+
+                <!-- Left: Work + Training -->
+                <div>
+                    <div class="exp-col-title">Work Experience & Training</div>
+                    <div class="timeline">
+                        <div class="tl-item rev left">
+                            <div class="tl-dot"></div>
+                            <div class="tl-card">
+                                <div class="tl-top">
+                                    <span class="tl-company">Q Spiders</span>
+                                    <span class="tl-period">Dec 2025 - Present</span>
+                                    <span class="tl-status ongoing">Active</span>
+                                </div>
+                                <div class="tl-role">Data Science Intern</div>
+                                <ul class="tl-tasks">
+                                    <li>Worked on data analytics and machine learning projects using Python, SQL, and
+                                        Scikit-learn.</li>
+                                    <li>Applied data preprocessing, EDA, and visualization using Pandas, NumPy,
+                                        Matplotlib, and Seaborn.</li>
+                                    <li>Built interactive Power BI dashboards and optimized SQL queries using Power
+                                        Query and DAX.</li>
+                                </ul>
+                                <div class="tl-modules">
+                                    <span class="tl-mod">Python</span><span class="tl-mod">Power BI</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tl-item rev left" style="--d:.15s">
+                            <div class="tl-dot"></div>
+                            <div class="tl-card">
+                                <div class="tl-top">
+                                    <span class="tl-company">Data Science Technical Workshop</span>
+                                    <span class="tl-period">Mar 2025 · 2 Days</span>
+                                    <span class="tl-status">Completed</span>
+                                </div>
+                                <div class="tl-role">Workshop Participant</div>
+                                <ul class="tl-tasks">
+                                    <li>Gained practical experience and foundational knowledge in Data Science.</li>
+                                    <li>Learned basic statistics and technical concepts through real-time
+                                        problem-solving activities.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Education -->
+                <div>
+                    <div class="exp-col-title">Education</div>
+                    <div class="timeline">
+                        <div class="tl-item rev right">
+                            <div class="tl-dot"></div>
+                            <div class="tl-card">
+                                <div class="tl-top">
+                                    <span class="tl-company">Sri Ramakrishna College of Engineering</span>
+                                    <span class="tl-period">Nov 2022 - May 2026</span>
+                                    <span class="tl-status ongoing">Ongoing</span>
+                                </div>
+                                <div class="tl-role">B.E. – Computer Science & Engineering</div>
+                                <ul class="tl-tasks">
+                                    <li>CGPA: 8.3</li>
+                                    <li>Presented research paper on Healthcare AI and Medical Image Diagnosis.</li>
+                                    <li>Participated in National Level Conference on Fog Computing Using Industry 5.0.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= RESUME ======= -->
+    <section id="resume">
+        <div class="wrap">
+            <span class="sec-tag rev" style="text-align:center;display:block">05 / Resume</span>
+            <h2 class="sec-h2 rev" style="text-align:center">Download My CV</h2>
+            <div class="sec-line rev" style="margin:16px auto 0"></div>
+            <div class="resume-spotlight rev">
+                <span class="resume-doc-icon">📄</span>
+                <h3>Chandru Venkatasamy — Resume</h3>
+                <p>Data Analyst · Machine Learning Enthusiast · Business Intelligence</p>
+                <div class="resume-btns">
+                    <a href="./files/Chandru-resume.pdf" download class="btn-ghost">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                            <polyline points="7 10 12 15 17 10" />
+                            <line x1="12" y1="15" x2="12" y2="3" />
+                        </svg>
+                        Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= CONTACT ======= -->
+    <section id="contact">
+        <div class="wrap">
+            <span class="sec-tag rev">06 / Contact</span>
+            <h2 class="sec-h2 rev">Let's Work Together</h2>
+            <div class="sec-line rev"></div>
+            <div class="contact-wrap">
+                <div class="contact-left rev left">
+                    <img src="./files/contact-img.jpeg" alt="Chandru" class="contact-photo" />
+                    <h3>Chandru Venkatasamy</h3>
+                    <p>Open to Data Analyst, Machine Learning, and Business Intelligence roles. Let's build something
+                        impactful together.</p>
+                    <div class="contact-items">
+                        <div class="c-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="4" width="20" height="16" rx="2" />
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                            </svg>
+                            chandruvenkatasamy2985@gmail.com
+                        </div>
+                        <div class="c-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            Dharmapuri, Tamil Nadu, India
+                        </div>
+                        <div class="c-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                            +91 637 975 4914
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-box rev right">
+                    <div class="success-box" id="successBox">
+                        <span>✓</span> Thank you for reaching out. I will reply soon!
+                    </div>
+                    <div class="form-row">
+                        <div class="f-group">
+                            <input type="text" id="fn" placeholder="Your Name" name="name" class="f-input" />
+                            <span class="f-err" id="fn-err"></span>
+                        </div>
+                        <div class="f-group">
+                            <input type="email" id="fe" placeholder="Your Email" name="email" class="f-input" />
+                            <span class="f-err" id="fe-err"></span>
+                        </div>
+                    </div>
+                    <div class="f-group">
+                        <input type="text" id="fs" placeholder="Subject" name="subject" class="f-input" />
+                        <span class="f-err" id="fs-err"></span>
+                    </div>
+                    <div class="f-group">
+                        <textarea id="fm" rows="5" placeholder="Your Message" name="message" class="f-input"></textarea>
+                        <span class="f-err" id="fm-err"></span>
+                    </div>
+                    <button class="btn-gold" style="width:100%;justify-content:center" id="sendBtn"
+                        onclick="submitForm()">
+                        <span id="sendTxt">Send Message</span>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <line x1="22" y1="2" x2="11" y2="13" />
+                            <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= FOOTER ======= -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">CHANDRU</div>
+            <div class="footer-copy">© 2026 · Data Analyst Portfolio</div>
+            <div class="footer-tech">Built with HTML · CSS · JavaScript</div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
